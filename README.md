@@ -58,3 +58,17 @@ archway rewards query archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3
 Outstanding rewards for archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3 (archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3)
 
 - 0.088681102069388332 ARCH (88681102069388332aarch)
+
+### Withdraw
+
+```
+archway rewards withdraw
+✔ Enter the name or address of the account that will send the transaction … dev
+Withdrawing rewards from dev (archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3)
+
+✅ Successfully claimed the following rewards:
+```
+
+This is tx hash.
+
+https://www.mintscan.io/archway/tx/2D19D9E2E913C2E8992F9E1F2F5BC48860D7974EB5D594EB3301F13B8F50A496?height=1233438
