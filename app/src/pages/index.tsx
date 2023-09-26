@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 
+import { DepositDeploymentAuthorization } from "@akashnetwork/akashjs/build/protobuf/akash/deployment/v1beta3/authz";
 import { MsgDepositDeployment } from "@akashnetwork/akashjs/build/protobuf/akash/deployment/v1beta3/deploymentmsg";
 import { getAkashTypeRegistry, getTypeUrl } from "@akashnetwork/akashjs/build/stargate/index";
 
@@ -37,8 +38,9 @@ export default function Home() {
                 denom: "uakt",
                 amount: "500",
               },
-              depositor: "akash14utyn6v5t5xqh0eztaptzf2jm8juy0nzlgt96r",
+              depositor: "akash1mzctggcrjqpjqdlvus6skpdrq6jpylz6ruguru",
             });
+
             console.log("message", message);
             const msgAny = {
               typeUrl: getTypeUrl(MsgDepositDeployment),
@@ -61,7 +63,15 @@ export default function Home() {
           }
         }}
       >
-        Test
+        Add Fund
+      </button>
+      <button
+        onClick={() => {
+          const ms = DepositDeploymentAuthorization.fromPartial({});
+          console.log(ms);
+        }}
+      >
+        Delegate
       </button>
     </main>
   );

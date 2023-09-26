@@ -1,0 +1,68 @@
+{
+  "deployments": [
+    {
+      "action": "metadata",
+      "txhash": "81C779E5A8B60069E4EA022EE30E87D8CE107C3BAF21869F246BBEDC81D88171",
+      "wasm": {
+        "codeId": 184
+      },
+      "contract": {
+        "name": "archway",
+        "version": "0.1.0",
+        "address": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "admin": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv"
+      },
+      "metadata": {
+        "contractAddress": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "ownerAddress": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv",
+        "rewardsAddress": "archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3"
+      }
+    },
+    {
+      "action": "metadata",
+      "txhash": "3D0156093FFA4CA3FE41E1C689FF5EC86909172B4F3F7A350044492A87DA7F4B",
+      "wasm": {
+        "codeId": 184
+      },
+      "contract": {
+        "name": "archway",
+        "version": "0.1.0",
+        "address": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "admin": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv"
+      },
+      "metadata": {
+        "contractAddress": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "ownerAddress": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv",
+        "rewardsAddress": ""
+      }
+    },
+    {
+      "action": "instantiate",
+      "txhash": "2EF7C1240209077D4AB9EBF356A62CB593E3A347D99D5D28A02C361DADE93277",
+      "wasm": {
+        "codeId": 184
+      },
+      "contract": {
+        "name": "archway",
+        "version": "0.1.0",
+        "address": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "admin": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv"
+      },
+      "msg": {
+        "count": 0
+      }
+    },
+    {
+      "action": "store",
+      "txhash": "CC3619B221F04545D3A95860AF601D6E475099C90AC57FB7A190DFCAA4CA63C7",
+      "wasm": {
+        "codeId": 184,
+        "checksum": "8d809ba7466afb5c8dd0b4f9611be408d945402c8b46827333ef4cf36a01d7db"
+      },
+      "contract": {
+        "name": "archway",
+        "version": "0.1.0"
+      }
+    }
+  ]
+}
