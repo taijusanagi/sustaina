@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [formMode, setFormMode] = useState<"input" | "dashboard">("input");
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -21,7 +22,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center mb-12">
-        <span className="text-7xl inline-block transform mb-4">🌿</span>
+        <span className="text-7xl inline-block transform mb-2">🌿</span>
 
         <h1 className="text-white text-4xl font-bold mb-2">Sustaina</h1>
         <p className="text-white text-lg">
@@ -31,9 +32,43 @@ export default function Home() {
 
       {/* Form Section */}
       <div className="flex items-center justify-center flex-grow mb-24">
-        <div className="bg-white py-6 px-4 rounded-lg shadow-md max-w-lg w-full border border-blue-200">
+        <div className="bg-white py-6 px-4 rounded-lg shadow-md max-w-lg w-full border border-green-200">
           <form className="space-y-4">
-            {formMode === "input" && <div>a</div>}
+            {formMode === "input" && (
+              <div>
+                <label className="block text-sm font-medium text-gray-700">
+                  Akash Deployment Owner
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md"
+                  placeholder="Enter Akash Deployment Owner"
+                />
+                <label className="block text-sm font-medium text-gray-700 mt-4">
+                  Akash Deployment Deseg
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md"
+                  placeholder="Enter Akash Deployment Deseg"
+                />
+                <label className="block text-sm font-medium text-gray-700 mt-4">
+                  Archway Contract Address
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md"
+                  placeholder="Enter Archway Contract Address"
+                />
+                <button
+                  type="button"
+                  onClick={() => setFormMode("dashboard")}
+                  className="mt-4 w-full px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50"
+                >
+                  Go to Dashboard
+                </button>
+              </div>
+            )}
             {formMode === "dashboard" && <div>b</div>}
           </form>
         </div>
