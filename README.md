@@ -12,6 +12,10 @@ http://df634uh841dcn2vg94d2ks15oc.ingress.provider02.nebulablock.com/
 
 https://deploy.cloudmos.io/deployment/akash14utyn6v5t5xqh0eztaptzf2jm8juy0nzlgt96r/12988011?network=mainnet
 
+### Akash Add Fund Tx with Archway Reward Hash
+
+https://www.mintscan.io/akash/tx/BF13FD8E17E8420D97C01089D50CFE3B437E526323E75D4E7B51371B85EA26BE
+
 ## Demo Video
 
 https://youtu.be/G_fKpgI9-jM
