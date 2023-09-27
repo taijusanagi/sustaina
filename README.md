@@ -1,80 +1,22 @@
-# TBD
+# Sustaina
 
-## Akash Integration
+## Description
 
-https://github.com/0xFable/nextjs-akash-boilerplate/tree/main
+Sustaina is an application designed to streamline the management of funds for Akash deployment by integrating the Archway contract reward withdrawal function. Users can conveniently withdraw Archway rewards and add funds to Akash deployment, addressing the high costs associated with managing Akash deployments independently.
 
-## Archway Integration
+## Problem
 
-### Deployment
+Managing funds to keep Akash deployment can be cumbersome and costly for the user.
 
-```
-Transaction: CC3619B221F04545D3A95860AF601D6E475099C90AC57FB7A190DFCAA4CA63C7
-```
+## Solution
 
-### Instantiate
+Sustaina addresses this problem by integrating Archway reward withdrawal functionality with Akash deployment funding. Users can set Archway reward withdrawal transactions to Akash deployment funding transaction memos for enhanced transparency. This reduces the managerial burden and extra costs associated with maintaining Akash deployments using Archway rewards, especially when the app is utilized by a multitude of users.
 
-```
-// archway contracts instantiate archway  --args '{"count":0}'
-✔ Enter the name or address of the account that will send the transaction … test
-Instantiating contract archway
-  Chain: archway-1
-  Code: 184
-  Label: archway-0.1.0
-  Admin: archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv
-  Signer: test
+## Technical Detail
 
-✅ Contract archway-0.1.0 instantiated
-  Address: archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz
-  Transaction: 2EF7C1240209077D4AB9EBF356A62CB593E3A347D99D5D28A02C361DADE93277
-```
+- **Archway Reward Withdrawal:** Allows users to withdraw rewards from Archway contracts seamlessly.
+- **Akash Deployment Funding:** Enables users to add funds directly to Akash deployments.
+- **Transaction Memo Setting:** Users can link Archway reward withdrawal transactions to Akash deployment funding transaction memos for transparency.
+- **User-friendly Interface:** Provides an easy-to-use platform for users to manage their funds and deployments.
 
-### Metadata
-
-```
-// archway contracts metadata archway --owner-address archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv --rewards-address archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3
-✔ Enter the name or address of the account that will send the transaction … test
-Setting metadata for contract archway
-  Chain: archway-1
-  Contract: archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz
-  Rewards: archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3
-  Owner: archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv
-  Signer: test
-
-✅ Metadata for the contract archway-0.1.0 updated
-  Transaction: 81C779E5A8B60069E4EA022EE30E87D8CE107C3BAF21869F246BBEDC81D88171
-```
-
-### Exexute
-
-```
-archway contracts execute archway --args '{"increment": {}}' --gas-adjustment 1.4
-✔ Enter the name or address of the account that will send the transaction … test
-Executing contract archway
-  Chain: archway-1
-  Signer: test
-
-✅ Executed contract  archway-0.1.0
-  Transaction: 0EF329C80710B7251CDDBE31D07BD0B52DA7DC6984B32CED5729989DF2063CAA
-```
-
-### Reward
-
-archway rewards query archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3
-Outstanding rewards for archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3 (archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3)
-
-- 0.088681102069388332 ARCH (88681102069388332aarch)
-
-### Withdraw
-
-```
-archway rewards withdraw
-✔ Enter the name or address of the account that will send the transaction … dev
-Withdrawing rewards from dev (archway1mzctggcrjqpjqdlvus6skpdrq6jpylz6mvels3)
-
-✅ Successfully claimed the following rewards:
-```
-
-This is tx hash.
-
-https://www.mintscan.io/archway/tx/2D19D9E2E913C2E8992F9E1F2F5BC48860D7974EB5D594EB3301F13B8F50A496?height=1233438
+![diagram](./docs/diagram.png)
