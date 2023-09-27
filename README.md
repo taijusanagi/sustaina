@@ -4,10 +4,6 @@ Streamlining Akash and Archway Rewards!
 
 ![screen-2](./docs/screen-2.png)
 
-## Docker Image
-
-https://hub.docker.com/layers/ookimaki/nextjs-akash-5/0.0.2/images/sha256-306f398dbf546d81b04be116d38df76c64b994df0d9dda20bcada44e5faff2d6?context=explore
-
 ## Live App (Akash Deployment)
 
 TBD
@@ -15,6 +11,10 @@ TBD
 ## Demo Video
 
 TBD
+
+## Docker Image for Demo App
+
+https://hub.docker.com/layers/ookimaki/nextjs-akash-5/0.0.2/images/sha256-306f398dbf546d81b04be116d38df76c64b994df0d9dda20bcada44e5faff2d6?context=explore
 
 ## Archway Test Contract Address
 
