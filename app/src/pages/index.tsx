@@ -19,6 +19,7 @@ export default function Home() {
   const [fund, setFund] = useState(0);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalText, setModalText] = useState("");
 
   return (
     <div
@@ -59,7 +60,7 @@ export default function Home() {
                   name="AkashDeploymentOwner"
                   value={akashDeploymentOwner}
                   onChange={(e) => setAkashDeploymentOwner(e.target.value)}
-                  className="mt-1 p-2 w-full border rounded-md"
+                  className="mt-1 p-2 w-full border rounded-md text-gray-700"
                   placeholder="Enter Akash Deployment Owner"
                 />
 
@@ -75,7 +76,7 @@ export default function Home() {
                   name="akashDeploymentDeseg"
                   value={akashDeploymentDesc}
                   onChange={(e) => setAkashDeploymentDesc(e.target.value)}
-                  className="mt-1 p-2 w-full border rounded-md"
+                  className="mt-1 p-2 w-full border rounded-md text-gray-700"
                   placeholder="Enter Akash Deployment Deseg"
                 />
 
@@ -91,7 +92,7 @@ export default function Home() {
                   name="archwayContractAddress"
                   value={archwayContractAddress}
                   onChange={(e) => setArchwayContractAddress(e.target.value)}
-                  className="mt-1 p-2 w-full border rounded-md"
+                  className="mt-1 p-2 w-full border rounded-md text-gray-700"
                   placeholder="Enter Archway Contract Address"
                 />
 
@@ -109,24 +110,26 @@ export default function Home() {
             {formMode === "dashboard" && (
               <div>
                 <div className="text-gray-700">
-                  <label className="block font-medium">
+                  <label className="block text-sm font-medium text-gray-700">
                     Akash Deployment Owner:
                   </label>
                   <p className="text-xs mt-1">{akashDeploymentOwner}</p>
 
-                  <label className="block font-medium mt-2">
+                  <label className="block text-sm font-medium text-gray-700 mt-2">
                     Akash Deployment Desc:
                   </label>
                   <p className="text-xs mt-1">{akashDeploymentDesc}</p>
 
-                  <label className="block font-medium mt-2">
+                  <label className="block text-sm font-medium text-gray-700 mt-2">
                     Archway Contract Address:
                   </label>
                   <p className="text-xs mt-1">{archwayContractAddress}</p>
                 </div>
 
                 <div className="mt-4">
-                  <label className="block font-medium">Archway Reward:</label>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Archway Reward:
+                  </label>
                   <div className="flex items-center justify-between">
                     <p className="text-xs mt-1"> {archwayReward}</p>
                     <button
@@ -156,6 +159,15 @@ export default function Home() {
                   </div>
                 )}
 
+                <a
+                  href="https://app.osmosis.zone/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-green-500 hover:underline mt-4 text-center"
+                >
+                  Swap and Bridge
+                </a>
+
                 <label className="block text-sm font-medium text-gray-700 mt-4">
                   Fund Amount
                 </label>
@@ -163,7 +175,7 @@ export default function Home() {
                   type="number"
                   value={fund}
                   onChange={(e) => setFund(Number(e.target.value))}
-                  className="mt-1 p-2 w-full border rounded-md"
+                  className="mt-1 p-2 w-full border rounded-md text-gray-700"
                 />
 
                 <button
@@ -188,9 +200,7 @@ export default function Home() {
           ></div>
           <div className="relative z-10 bg-white py-4 px-6 rounded-xl shadow-lg max-w-xl w-full mx-4">
             <header className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold text-gray-700">
-                Secret Sponsor Tx
-              </h2>
+              <h2 className="text-xl font-bold text-gray-700">Confirmation</h2>
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="text-2xl text-gray-400 hover:text-gray-500"
@@ -198,7 +208,7 @@ export default function Home() {
                 &times;
               </button>
             </header>
-            <div className="space-y-4">Modal</div>
+            <div className="space-y-4">{modalText}</div>
           </div>
         </div>
       )}
