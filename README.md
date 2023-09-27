@@ -12,6 +12,10 @@ TBD
 
 TBD
 
+## Pitch Deck
+
+https://docs.google.com/presentation/d/1pvsUnwMZZ51K_1EB2fd7O814TFRlzQ9qM2Y2ikyf83M/edit?usp=sharing
+
 ## Docker Image for Demo App
 
 https://hub.docker.com/layers/ookimaki/nextjs-akash-5/0.0.2/images/sha256-306f398dbf546d81b04be116d38df76c64b994df0d9dda20bcada44e5faff2d6?context=explore
@@ -30,14 +34,13 @@ Managing funds to keep Akash deployment can be cumbersome and costly for the use
 
 ## Solution
 
-Sustaina addresses this problem by integrating Archway reward withdrawal functionality with Akash deployment funding. Users can set Archway reward withdrawal transactions to Akash deployment funding transaction memos for enhanced transparency. This reduces the managerial burden and extra costs associated with maintaining Akash deployments using Archway rewards, especially when the app is utilized by a multitude of users.
+Sustaina addresses this problem by integrating Archway reward withdrawal functionality with Akash deployment funding. Users can set Archway reward withdrawal transactions to Akash deployment funding transaction memos for enhanced transparency.
 
 ## Technical Detail
 
 - **Archway Reward Withdrawal:** Allows users to withdraw rewards from Archway contracts seamlessly.
 - **Akash Deployment Funding:** Enables users to add funds directly to Akash deployments.
 - **Transaction Memo Setting:** Users can link Archway reward withdrawal transactions to Akash deployment funding transaction memos for transparency.
-- **User-friendly Interface:** Provides an easy-to-use platform for users to manage their funds and deployments.
 
 ![diagram](./docs/diagram.png)
 
