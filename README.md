@@ -1,5 +1,7 @@
 # Sustaina
 
+Streamlining Akash and Archway Rewards!
+
 ## Description
 
 Sustaina is an application designed to streamline the management of funds for Akash deployment by integrating the Archway contract reward withdrawal function. Users can conveniently withdraw Archway rewards and add funds to Akash deployment, addressing the high costs associated with managing Akash deployments independently.
@@ -20,3 +22,7 @@ Sustaina addresses this problem by integrating Archway reward withdrawal functio
 - **User-friendly Interface:** Provides an easy-to-use platform for users to manage their funds and deployments.
 
 ![diagram](./docs/diagram.png)
+
+## How to Use
+
+TBD
