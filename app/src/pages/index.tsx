@@ -14,6 +14,12 @@ import { SigningStargateClient } from "@cosmjs/stargate";
 
 const inter = Inter({ subsets: ["latin"] });
 
+declare global {
+  interface Window {
+    keplr: any;
+  }
+}
+
 export default function Home() {
   const [formMode, setFormMode] = useState<"input" | "dashboard">("input");
   const [akashDeploymentOwner, setAkashDeploymentOwner] = useState(
