@@ -1,16 +1,20 @@
 # Sustaina
 
-Streamlining Akash and Archway Rewards!
+Streamlining Akash Deployment and Archway Rewards!
 
 ![screen-2](./docs/screen-2.png)
 
-## Live App (Akash Deployment)
+## Live App
 
-TBD
+http://df634uh841dcn2vg94d2ks15oc.ingress.provider02.nebulablock.com/
+
+### Akash Deployment
+
+https://deploy.cloudmos.io/deployment/akash14utyn6v5t5xqh0eztaptzf2jm8juy0nzlgt96r/12988011?network=mainnet
 
 ## Demo Video
 
-TBD
+https://youtu.be/G_fKpgI9-jM
 
 ## Pitch Deck
 
