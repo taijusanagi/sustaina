@@ -2,7 +2,7 @@
 
 Streamlining Akash and Archway Rewards!
 
-![screen-1](./docs/screen-1.png)
+![screen-2](./docs/screen-2.png)
 
 ## Description
 

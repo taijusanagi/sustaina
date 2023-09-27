@@ -2,6 +2,24 @@
   "deployments": [
     {
       "action": "metadata",
+      "txhash": "E216C2CE13BA0A1A08EA5D15D826F148FE0F27C262A697BB0A9049CFEF650985",
+      "wasm": {
+        "codeId": 184
+      },
+      "contract": {
+        "name": "archway",
+        "version": "0.1.0",
+        "address": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "admin": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv"
+      },
+      "metadata": {
+        "contractAddress": "archway1tqfuly7tfcp7cfqfjq7nlv0xqhlpq3sjlcmgq2edxvky5r9k5qwq77lqkz",
+        "ownerAddress": "archway1mem9l5x2hqeh93t62g5e4g7x3v0w9spwfzx4kv",
+        "rewardsAddress": "archway14utyn6v5t5xqh0eztaptzf2jm8juy0nz8c6xfw"
+      }
+    },
+    {
+      "action": "metadata",
       "txhash": "81C779E5A8B60069E4EA022EE30E87D8CE107C3BAF21869F246BBEDC81D88171",
       "wasm": {
         "codeId": 184
